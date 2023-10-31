@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    font-size: 16px;
+    background-color: #ffffff;
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #options-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #options-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 24px 0;
+  }
+  
+  #options-container button {
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+  }
+  
+  #options-container button:disabled {
+    border: 2px solid #808080;
+    color: #808080;
+    background-color: #efefef;
+    cursor: not-allowed;
+  }
+  
+  #options-container button.active {
+    background-color: #3498db;
+    border: 2px solid #000000;
+    color: #fff;
+  }
+  
+  .letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #letter-container button {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .new-game-popup {
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  #user-input-section {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    margin: 6px 0 12px 0;
+  }
+  
+  canvas {
+    display: block;
+    margin: auto;
+    border: 10px solid #3498db;
+    border-radius: 10px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  #result-text h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  
+  #result-text p {
+    font-size: 1.25em;
+    margin: 10px 0 20px 0;
+  }
+  
+  #result-text span {
+    font-weight: 600;
+  }
+  
+  #new-game-button {
+    font-size: 1.25em;
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: 2px solid #000000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+  }
+  
+  .win-msg {
+    color: #39d78d;
+  }
+  
+  .lose-msg {
+    color: #fe5152;
+  }
+  
